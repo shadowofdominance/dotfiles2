@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Define the menu options
+options="  Power Off\n  Reboot\n 󰗽 Logout"
+
+# Show the Rofi menu and capture the selected option
+selected_option=$(echo -e "$options" | rofi -dmenu -p "System:")
+
+# Perform actions based on the selected option
+case "$selected_option" in
+    "  Power Off")
+        systemctl poweroff
+        ;;
+    "  Reboot")
+        systemctl reboot
+        ;;
+    " 󰗽 Logout")
+        pkill -KILL -u $USER
+        ;;
+    *)
+        echo "Invalid option"
+        ;;
+esac

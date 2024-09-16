@@ -1,0 +1,14 @@
+#!/bin/bash
+
+WALL_SCRIPTS=(
+	"/home/shadowg_2004/scripts/feelheaven.sh"
+	"/home/shadowg_2004/scripts/reachfuture.sh"
+	"/home/shadowg_2004/scripts/hellstart.sh"
+	"/home/shadowg_2004/scripts/architect.sh"
+	"/home/shadowg_2004/scripts/spaceout.sh"
+  "/home/shadowg_2004/scripts/cars.sh"
+)
+
+RAN_INDEX=$((RANDOM % ${#WALL_SCRIPTS[@]}))
+
+"${WALL_SCRIPTS[RAN_INDEX]}"

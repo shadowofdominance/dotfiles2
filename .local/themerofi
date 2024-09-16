@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Define the menu options
+options="  Abstract\n  Anime\n  Architecture\n 󰞬 Cars\n 󰲉 Futuristic\n 󰈸 Hell\n  Nature\n 󰖔 Night Scape\n  Random\n  Space"
+
+# Show the Rofi menu and capture the selected option
+selected_option=$(echo -e "$options" | rofi -dmenu -p "  󱡴  Select custom Theme: ")
+
+# Perform actions based on the selected option
+case "$selected_option" in
+    "  Abstract")
+       	abswall
+        ;;
+    "  Anime")
+        aniwall
+        ;;
+    "  Architecture")
+        archwall
+        ;;
+
+    " 󰞬 Cars")
+        carwall
+        ;;
+    " 󰲉 Futuristic")
+        futurewall
+        ;;
+    " 󰈸 Hell")
+        hellwall
+        ;;
+    "  Nature")
+        heavenwall
+        ;;
+    " 󰖔 Night Scape")
+        nightwall
+        ;;
+    "  Random")
+        ranwall
+        ;;
+    "  Space")
+        spacewall
+        ;;
+
+    *)
+        echo "Invalid option"
+        ;;
+esac
