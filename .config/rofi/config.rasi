@@ -1,0 +1,29 @@
+configuration{
+    modi: ["drun", "window", "run"];
+    icon-theme: "Papirus-Dark";
+    show-icons: true;
+    terminal: "mate-terminal";
+    drun-display-format: "{icon} {name}";
+    location: 5;
+    disable-history: false;
+    sidebar-mode: true;
+    display-drun: " Search for an application: ";
+    display-run: " Search for an application or a script: ";
+    display-window: " ";
+    
+    //adding vim keybindings
+    kb-row-up: "Up";
+    kb-row-left: "Left";
+    kb-row-right: "Right";
+    kb-row-down: "Down";
+
+    kb-accept-entry: "Return";
+
+    //fixing up
+    kb-remove-to-eol: "";
+    kb-move-char-back: "Control+b";
+    kb-remove-char-back: "BackSpace";
+    kb-move-char-forward: "Control+f";
+    kb-mode-complete: "Control+o";
+}
+@theme "/usr/share/rofi/themes/arthur.rasi"

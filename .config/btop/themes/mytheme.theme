@@ -1,0 +1,7 @@
+# Theme file for btop
+transparent = true
+alpha = 0.75
+
+# Define your colors here if needed, or you can leave the defaults
+main_fg = 255,255,255
+main_bg = 0,0,0
